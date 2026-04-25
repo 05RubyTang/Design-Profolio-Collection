@@ -57,7 +57,11 @@
   .highlight-ribbon { position: absolute; top: 12px; left: -6px; background: var(--red); color: white; font-size: 11px; font-weight: 800; padding: 4px 12px 4px 10px; border-radius: 0 4px 4px 0; box-shadow: 0 2px 6px rgba(255,36,66,0.3); z-index: 2; }
   .highlight-ribbon::before { content: ''; position: absolute; bottom: -6px; left: 0; border-top: 6px solid #CC0022; border-left: 6px solid transparent; }
 
-  .card-cover { height: 120px; display: flex; align-items: center; justify-content: center; font-size: 42px; position: relative; }
+  .card-cover { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 42px; position: relative; overflow: hidden; }
+  .card-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card-cover img.img-error { display: none; }
+  .card-cover-fallback { width: 100%; height: 100%; display: none; align-items: center; justify-content: center; font-size: 42px; }
+  .card-cover-fallback.visible { display: flex; }
   .card-badge { position: absolute; top: 10px; right: 10px; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; background: rgba(255,36,66,0.88); color: white; }
   .card-body { padding: 16px 18px 18px; }
   .card-title { font-size: 15px; font-weight: 700; line-height: 1.4; margin-bottom: 8px; color: var(--dark); }
@@ -151,7 +155,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🏆 902赞</div>
-      <div class="card-cover cov-id">🎓</div>
+      <div class="card-cover cov-id"><img class="cover-img" src="封面/01_id_同济浙大双offer.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">保研同济&浙大双offer · 全流程经验分享</div>
         <div class="card-desc">作者「腮克希」分享完整保研历程，作品集展示设计推进全过程，包含多个完整项目。同时拿下同济工设和浙大设计双offer，是工业设计方向的标杆经验帖。</div>
@@ -165,7 +169,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🔥 519赞</div>
-      <div class="card-cover cov-id">🥇</div>
+      <div class="card-cover cov-id"><img class="cover-img" src="封面/02_id_第一名保研同济浙大.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">第一名保研同济&浙大 · 大三如何准备</div>
         <div class="card-desc">同一作者「腮克希」的另一篇经验帖，以专业第一名的身份详解大三全年备考规划，包括何时选题、如何做调研、建模渲染时间分配等，干货密度极高。</div>
@@ -178,7 +182,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-id">📚</div>
+      <div class="card-cover cov-id"><img class="cover-img" src="封面/03_id_四所top985作品集.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-badge">702赞</div>
       <div class="card-body">
         <div class="card-title">四所top985的作品集长什么样</div>
@@ -192,7 +196,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-id">🙏</div>
+      <div class="card-cover cov-id"><img class="cover-img" src="封面/04_id_同济从0开始.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">感谢同济接受我大三下从0做起的作品集</div>
         <div class="card-desc">「Stone Penn」的真实上岸帖，大三下学期才开始准备，成功保研同济工业设计。展示了从0开始的完整项目流程，对时间较晚才起步的同学有极强的参考价值。</div>
@@ -205,7 +209,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-id">📁</div>
+      <div class="card-cover cov-id"><img class="cover-img" src="封面/05_id_医疗方向作品集.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">个人作品集分享 · 项目三（医疗方向）</div>
         <div class="card-desc">「OverScarletSky」的系列作品集分享，项目三聚焦医疗/康复类产品设计，建模渲染精细，调研过程详细。该作者连续发布多篇作品集项目，是小红书质量最高的工设作品集分享账号之一。</div>
@@ -218,7 +222,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-id">🏆</div>
+      <div class="card-cover cov-id"><img class="cover-img" src="封面/06_id_系统设计多所985.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">保研同济等3所985 · 系统设计作品集</div>
         <div class="card-desc">「小熊好想冬眠」分享了保研同济系统设计+另外2所985的作品集全貌，重点展示设计系统思维和多项目布局策略，对理解"什么样的作品集能保多所"有直接指导意义。</div>
@@ -257,7 +261,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🏆 2881赞</div>
-      <div class="card-cover cov-ux">📖</div>
+      <div class="card-cover cov-ux"><img class="cover-img" src="封面/07_ux_同济交互大翻阅.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">同济交互作品集大翻阅！</div>
         <div class="card-desc">「叮零咚咚cici」发布的同济交互作品集完整翻阅，2881赞是全平台设计保研作品集类笔记互动量Top1。覆盖心理健康App、智慧出行、老龄化设计等多个选题方向，是交互方向最强参考帖。</div>
@@ -271,7 +275,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🔥 409赞</div>
-      <div class="card-cover cov-ux">🎓</div>
+      <div class="card-cover cov-ux"><img class="cover-img" src="封面/08_ux_末流211保研同济.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">末流211靠作品集保研同济交互设计</div>
         <div class="card-desc">「设计保研喵喵学姐」真实上岸帖，学校背景并不强但凭借作品集质量保研同济交互。详细分析了哪类项目选题打动了导师，对普通院校同学极具参考价值。</div>
@@ -284,7 +288,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-ux">🎯</div>
+      <div class="card-cover cov-ux"><img class="cover-img" src="封面/09_ux_华师第一同济双院校.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-badge">351赞</div>
       <div class="card-body">
         <div class="card-title">拿下华师第一和同济交互的作品集揭秘</div>
@@ -298,7 +302,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-ux">🕹️</div>
+      <div class="card-cover cov-ux"><img class="cover-img" src="封面/10_ux_AR交互群体性孤独.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">末2保研同济设计 · AR交互&群体性孤独</div>
         <div class="card-desc">「研明设计保研」分享的真实上岸项目，以"群体性孤独"社会议题切入，用AR交互方式探索人与人的数字连接，项目选题差异化极强，导师记忆点突出。</div>
@@ -311,7 +315,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-ux">🔍</div>
+      <div class="card-cover cov-ux"><img class="cover-img" src="封面/11_ux_调研只有罗列没分析.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">交互作品集常见问题 · 调研只有罗列没有分析</div>
         <div class="card-desc">「AM Haidee」针对交互作品集最高频问题的深度分析帖，专门讲解如何从"罗列数据"升级到"产出洞察"，是交互方向必读的方法论指导帖，150赞。</div>
@@ -324,7 +328,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-ux">⚡</div>
+      <div class="card-cover cov-ux"><img class="cover-img" src="封面/12_ux_同济设创避坑指南.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">同济设创作品集指南 · 避开90%人踩的坑</div>
         <div class="card-desc">「一只弗」针对同济设计创意工程方向的专项作品集指南，319赞，详细列出同济最常见的踩坑点和对应解决策略，对报考同济设创方向的学生必读。</div>
@@ -363,7 +367,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🏆 397赞</div>
-      <div class="card-cover cov-sd">⏱️</div>
+      <div class="card-cover cov-sd"><img class="cover-img" src="封面/13_sd_21天放弃考研.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">放弃考研21天准备保研的作品集</div>
         <div class="card-desc">「露露有为呀」分享了放弃考研后仅用21天极速完成保研作品集并成功上岸的经历，展示了服务设计项目快速成型的策略，对时间紧迫的同学有极强参考价值。</div>
@@ -377,7 +381,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🔥 294赞</div>
-      <div class="card-cover cov-sd">🎏</div>
+      <div class="card-cover cov-sd"><img class="cover-img" src="封面/14_sd_同济PSSD服务设计.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">同济大学上岸 · 服务设计案例作品集</div>
         <div class="card-desc">「外星人设计Studio」2022年发布的同济PSSD上岸作品集分享，虽然发布时间较早，但仍是小红书该方向赞数最高的帖子之一（294赞）。内容展示服务设计完整流程，经典参考。</div>
@@ -390,7 +394,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-sd">🚕</div>
+      <div class="card-cover cov-sd"><img class="cover-img" src="封面/15_sd_网约车司机城市英雄.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-badge">193赞</div>
       <div class="card-body">
         <div class="card-title">服务设计案例 · 网约车司机也是城市英雄</div>
@@ -404,7 +408,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-sd">📗</div>
+      <div class="card-cover cov-sd"><img class="cover-img" src="封面/16_sd_绘本租赁服务系统.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">绘本租赁服务系统作品集分享</div>
         <div class="card-desc">「银银学姐」分享的绘本租赁服务设计，133赞。从用户调研（亲子阅读行为）到服务蓝图完整呈现，触点设计清晰，是服务设计方向中选题差异化且完整度高的典型案例。</div>
@@ -417,7 +421,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-sd">🎈</div>
+      <div class="card-cover cov-sd"><img class="cover-img" src="封面/17_sd_高分保研湖南大学.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">服务设计 · 高分保研湖南大学的作品集</div>
         <div class="card-desc">「设计保研Fun程式」分享的湖南大学服务设计方向上岸作品集，详解湖大服务设计的审美偏好和评审重点，是报考湖大PSSD方向的专属参考帖。</div>
@@ -430,7 +434,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-sd">🛝</div>
+      <div class="card-cover cov-sd"><img class="cover-img" src="封面/18_sd_儿童运动探索游乐场.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">设计灵感 · 让社区成为儿童运动探索的游乐场</div>
         <div class="card-desc">「Bing的学习日常」分享的社区儿童空间服务设计灵感帖，展示了以儿童行为研究为出发点的社区服务改造方案，适合服务设计+空间设计跨方向选题参考。</div>
@@ -469,7 +473,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🏆 1701赞</div>
-      <div class="card-cover cov-gd">🎲</div>
+      <div class="card-cover cov-gd"><img class="cover-img" src="封面/19_gd_游戏设计作品集一年.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">做了快一年的游戏设计作品集</div>
         <div class="card-desc">「紫薯冰粉」分享花了近一年时间制作的游戏设计作品集，1701赞是全平台游戏设计保研方向互动量Top1。完整呈现从世界观构建到机制设计再到关卡制作的全流程，是该方向的标杆参考帖。</div>
@@ -483,7 +487,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🔥 811赞</div>
-      <div class="card-cover cov-gd">🤖</div>
+      <div class="card-cover cov-gd"><img class="cover-img" src="封面/20_gd_AIGC游戏设计.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">保研作品集 · AIGC辅助的游戏设计作品</div>
         <div class="card-desc">「星云」分享的结合AIGC技术的游戏设计作品集，811赞。用AI生成美术资产+人工设计关卡逻辑，展示技术整合能力，是清华SIGS和国美方向的热门参考选题。</div>
@@ -496,7 +500,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-gd">🃏</div>
+      <div class="card-cover cov-gd"><img class="cover-img" src="封面/21_gd_AR桌游北师大前三.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-badge">173赞</div>
       <div class="card-body">
         <div class="card-title">拿下北师艺传前三的AR桌游游戏设计项目</div>
@@ -510,7 +514,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-gd">🗺️</div>
+      <div class="card-cover cov-gd"><img class="cover-img" src="封面/22_gd_地编关卡设计指南.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">如何准备地编作品集</div>
         <div class="card-desc">「耿嘉辉」发布的地图编辑/关卡设计专项指南，362赞。清华深研院IMDT对关卡设计有专项考察，该帖从GDD文档写法到流量节点分析均有详细说明，是地编/关卡方向必读。</div>
@@ -523,7 +527,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-gd">🧠</div>
+      <div class="card-cover cov-gd"><img class="cover-img" src="封面/23_gd_VR情绪认知游戏.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">作品集项目分享 · 关于情绪认知的VR游戏设计</div>
         <div class="card-desc">「DN设计工坊」分享的VR情绪认知游戏设计项目，结合认知行为疗法理论框架，将心理疗愈融入VR沉浸体验。艺术性和学术性兼顾，适合北师大/国美新媒体艺术方向。</div>
@@ -536,7 +540,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-gd">🏺</div>
+      <div class="card-cover cov-gd"><img class="cover-img" src="封面/24_gd_文化遗产桌游设计.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">我做了一套关于文化遗产的桌游设计</div>
         <div class="card-desc">「DN设计工坊」的文化遗产主题桌游设计项目，259赞。将非遗/历史场景融入桌游机制，从世界观构建到规则设计完整呈现，是叙事游戏方向的典型参考案例。</div>
@@ -575,7 +579,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🏆 3002赞</div>
-      <div class="card-cover cov-vd">🏫</div>
+      <div class="card-cover cov-vd"><img class="cover-img" src="封面/25_vd_清华美院视传保研.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">清华美院保研作品集分享 · 视觉传达</div>
         <div class="card-desc">「肥肥的荔枝」分享的清华美院视传保研作品集，3002赞是全平台设计保研类所有方向互动量最高的帖子！完整展示清华美院视传方向的审美标准和作品集结构，是该方向最权威的参考帖。</div>
@@ -589,7 +593,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🔥 1061赞</div>
-      <div class="card-cover cov-vd">📚</div>
+      <div class="card-cover cov-vd"><img class="cover-img" src="封面/26_vd_北师大作品集翻阅.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">保研北师大的作品集大翻阅（详解版）</div>
         <div class="card-desc">「懒得冻」的北师大视传作品集完整翻阅，1061赞。详解版包含每个项目的选题逻辑和版式思路说明，对理解北师大视传方向的评审标准有直接参考价值。</div>
@@ -602,7 +606,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-vd">📑</div>
+      <div class="card-cover cov-vd"><img class="cover-img" src="封面/27_vd_视传排版插画篇.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-badge">436赞</div>
       <div class="card-body">
         <div class="card-title">视传保研作品集排版 · 插画篇</div>
@@ -616,7 +620,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-vd">📊</div>
+      <div class="card-cover cov-vd"><img class="cover-img" src="封面/28_vd_清华美院信息设计.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">清华美院视觉传达保研入围作品集分享</div>
         <div class="card-desc">「外星人设计Studio」分享的清华美院视传入围作品集，286赞，重点展示信息设计/数据可视化方向的作品，是清华美院信息设计方向申请的专项参考帖。</div>
@@ -629,7 +633,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-vd">🎖️</div>
+      <div class="card-cover cov-vd"><img class="cover-img" src="封面/29_vd_211视传专业第一.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">211视传 · 专业第一保研作品集</div>
         <div class="card-desc">「33酱」以211院校视传专业第一名的身份分享的保研作品集，313赞。展示视觉风格高度统一的完整作品集，选题差异化明显，是211院校视传学生保研的优质参考。</div>
@@ -642,7 +646,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-vd">🪄</div>
+      <div class="card-cover cov-vd"><img class="cover-img" src="封面/30_vd_三个维度作品集留下.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">3个维度，作品集被导师当场留下</div>
         <div class="card-desc">「懒得冻」（北师大视传上岸学姐）发布的方法论帖，189赞，从"设计深度/视觉表现/叙事逻辑"三个维度分析什么样的作品集会被导师主动留下，对所有视传方向学生适用。</div>
@@ -681,7 +685,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🏆 真实上岸</div>
-      <div class="card-cover cov-td">🚂</div>
+      <div class="card-cover cov-td"><img class="cover-img" src="封面/31_td_独立完成未来高铁.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">大二工业设计生，独立做了一整列未来高铁</div>
         <div class="card-desc">「HH-DESIGN」分享的真实项目，大二就独立完成了一整列未来高铁的完整概念设计，从草图到内外饰三视图全程独立完成，100赞。是交通工具方向最令人印象深刻的个人项目之一。</div>
@@ -694,7 +698,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-td">🚗</div>
+      <div class="card-cover cov-td"><img class="cover-img" src="封面/32_td_交通工具作品集分享.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-badge">171赞</div>
       <div class="card-body">
         <div class="card-title">交通工具作品集分享</div>
@@ -708,7 +712,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-td">🏍️</div>
+      <div class="card-cover cov-td"><img class="cover-img" src="封面/33_td_DUCATI最后一英里.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">作品集 · DUCATI"最后一英里"载具</div>
         <div class="card-desc">「Arsion的产品笔记」以DUCATI品牌为参照做的最后一公里轻型载具设计，55赞。品牌基因解读+电动化转型+造型语言一致性，是品牌参照类交通工具项目的典型案例。</div>
@@ -721,7 +725,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-td">🏛️</div>
+      <div class="card-cover cov-td"><img class="cover-img" src="封面/34_td_跨保清华车辆学院.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">沉浸式翻阅 · 设计跨保清华车辆学院作品</div>
         <div class="card-desc">「DN设计工坊」分享的跨保清华车辆学院的设计类学生作品集案例，28赞。重点展示工科设计生如何通过作品集跨保清华车辆学院设计方向，是跨校跨方向保研的稀缺参考。</div>
@@ -734,7 +738,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-td">🏁</div>
+      <div class="card-cover cov-td"><img class="cover-img" src="封面/35_td_三天速通概念超跑.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">大二三天速通毕设 · 概念超跑方案卷出来了</div>
         <div class="card-desc">「zhusnk」分享的三天速成概念超跑设计，32赞，以强烈的造型语言展示手绘功底+建模能力。速通类帖子特别适合时间紧迫时参考作品集结构的精简方案。</div>
@@ -773,7 +777,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🏆 700赞</div>
-      <div class="card-cover cov-dm">📡</div>
+      <div class="card-cover cov-dm"><img class="cover-img" src="封面/36_dm_厦大北师大数媒保研.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">厦大→北师大 · 数媒保研作品集大公开</div>
         <div class="card-desc">「一只兰兰鬼」从厦门大学跨保北师大数字媒体方向，700赞，是数媒方向全平台互动量最高的保研帖。完整公开了作品集结构（动态/交互/装置/视频多类型），并详解各方向选题逻辑。</div>
@@ -787,7 +791,7 @@
 
     <div class="highlight-card">
       <div class="highlight-ribbon">🔥 986赞</div>
-      <div class="card-cover cov-dm">🎬</div>
+      <div class="card-cover cov-dm"><img class="cover-img" src="封面/37_dm_新媒体影像研究作品集.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">新媒体×影像×研究作品集 · 2017-25 附PDF</div>
         <div class="card-desc">「黄杰远」发布的跨度8年的新媒体艺术+影像+研究完整作品集，986赞且附PDF下载，是数字媒体艺术方向少见的完整作品集公开帖，艺术性极强，适合国美/北师大方向参考。</div>
@@ -800,7 +804,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-dm">🏫</div>
+      <div class="card-cover cov-dm"><img class="cover-img" src="封面/38_dm_数媒双非上岸同济.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-badge">24赞</div>
       <div class="card-body">
         <div class="card-title">数媒双非上岸同济 · 被导师留下的作品集</div>
@@ -814,7 +818,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-dm">🏫</div>
+      <div class="card-cover cov-dm"><img class="cover-img" src="封面/39_dm_数媒上岸浙大软院.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">数字媒体艺术上岸浙江大学软院</div>
         <div class="card-desc">「小羊学长设计保研」分享的数字媒体艺术方向上岸浙大软件学院的完整经验，展示作品集结构和夏令营准备方法，是浙大数媒方向最直接的参考帖。</div>
@@ -827,7 +831,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-dm">🔊</div>
+      <div class="card-cover cov-dm"><img class="cover-img" src="封面/40_dm_声音机械艺术疗愈装置.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">保研作品集 · 基于声音与机械的艺术疗愈装置</div>
         <div class="card-desc">「设计保研喵喵学姐」最新发布的装置艺术作品集项目，将声音传感器与机械结构结合，创作艺术疗愈装置。是数媒/新媒体艺术方向中技术+艺术结合的差异化选题参考。</div>
@@ -840,7 +844,7 @@
     </div>
 
     <div class="project-card">
-      <div class="card-cover cov-dm">🎮</div>
+      <div class="card-cover cov-dm"><img class="cover-img" src="封面/41_dm_双非保985交互数媒.webp" alt="笔记封面" onerror="this.parentNode.style.background='#f5f5f5'"></div>
       <div class="card-body">
         <div class="card-title">双非保研985 · 一份优秀的交互数媒作品集</div>
         <div class="card-desc">「设计保研喵喵学姐」分享的双非学生保研985（交互+数媒跨方向）的作品集案例，67赞，展示了如何在作品集中同时展现交互设计和数字媒体技能，适合跨方向保研参考。</div>
@@ -867,12 +871,43 @@
 </footer>
 
 <script>
+  // 滚动高亮导航
   const sections = document.querySelectorAll('.section');
   const tabs = document.querySelectorAll('.tab-btn');
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
     tabs.forEach(t => { t.classList.remove('active'); if (t.getAttribute('href') === '#' + current) t.classList.add('active'); });
+  });
+
+  // 图片加载失败降级处理：显示 emoji 占位符
+  const coverEmojis = {
+    'cov-id': '🔧',
+    'cov-ux': '💻',
+    'cov-sd': '🔗',
+    'cov-gd': '🎮',
+    'cov-vd': '🎨',
+    'cov-td': '🚗',
+    'cov-dm': '📱',
+  };
+
+  document.querySelectorAll('.card-cover img').forEach(img => {
+    // 找到父级 card-cover 的颜色类
+    const cover = img.closest('.card-cover');
+    const coverClass = Object.keys(coverEmojis).find(c => cover.classList.contains(c)) || 'cov-id';
+    const emoji = coverEmojis[coverClass];
+
+    // 创建 fallback 元素
+    const fallback = document.createElement('div');
+    fallback.className = 'card-cover-fallback';
+    fallback.textContent = emoji;
+    cover.appendChild(fallback);
+
+    // 图片加载失败时切换到 fallback
+    img.addEventListener('error', () => {
+      img.classList.add('img-error');
+      fallback.classList.add('visible');
+    });
   });
 </script>
 </body>
